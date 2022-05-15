@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'blog'
+    'blog',
+    #'accounts'
 ]
 
 MIDDLEWARE = [
@@ -71,9 +72,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
-
-
-#################################################################
 
 
 REST_FRAMEWORK = {

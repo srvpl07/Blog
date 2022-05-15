@@ -11,9 +11,12 @@ class PostView(ModelViewSet):
     serializer_class = PostSerializer
     queryset= Post.objects.all()
     permission_classes = [IsAuthenticated]
+    
+
 
 def home(request):
 
     all_posts = Post.objects.all()
 
-    return render ( request, 'index.html', {'posts' : all_posts })
+    return render ( request, {'posts' : all_posts })
+
